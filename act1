@@ -1,0 +1,16 @@
+include <stdio.h>
+int main ()
+{
+printf("Enter Employee ID\n");
+scanf("%d, &empID");
+int empID, rph, nhw, GP, TD, NP;
+printf("Enter rate per hour and Number of hrs. worked\n");
+scanf ("%d %d" , &rph, &nhw);
+GP = rph*nhw;
+TD = (0.2*GP)+(0.05*GP)+150+150;
+NP = GP - TD;
+printf("GrossPay: %d\n", GP);
+printf("Total Deductions: %d\n", TD);
+printf("Net Pay: %d\n" , NP);
+return 0;
+}
